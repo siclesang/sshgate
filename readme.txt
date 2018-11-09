@@ -7,7 +7,7 @@ ssh shell  堡垒机
 2.录屏以备审计
 
 使用方法
-
+ mkdir $pwddir"/logs" && chmod 777 $pwddir"/logs"
  echo "/bin/bash $pwddir/run.sh" >> [/etc/profile |/etc/profile.d/xxx.sh | /etc/bashrc | .. ]
 
 
