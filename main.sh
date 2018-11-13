@@ -65,7 +65,7 @@ function acladmin(){
 
 userSelect=''
 groupname=`id -ng $USER`
-[ `id -u  $USER` -le 900 ] && exit
+[ `id -u  $USER` -le 1000 ] && exit
 pwddir=$(cd $(dirname $0) && pwd)
 acldir=$pwddir"/acl"
 logsdir=$pwddir"/logs"
