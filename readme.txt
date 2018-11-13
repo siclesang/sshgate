@@ -3,7 +3,7 @@ sshgate
 
 ssh shell  堡垒机
 
-1.限制用户可登录机器列表
+1.根据用户组限制可登录机器列表
 2.录屏以备审计
 
 使用方法
@@ -17,7 +17,7 @@ ssh shell  堡垒机
 
  |
  |---run.sh  # echo "/bin/bash $pwddir/run.sh" >> [/etc/profile | /etc/profile.d/xxx.sh | /etc/bashrc | .. ]
- |---main.sh # user selects hosts to login 
+ |---main.sh # user selects hosts to login  ; uid <= 1000 exit
  |---acl
  |   |
  |   |--[named usergroup] #content(first column mast be ip or hostname):[ip|hostname] [host describtions]
